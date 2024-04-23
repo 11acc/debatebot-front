@@ -4,7 +4,8 @@ import ChatPage from './ChatPage';
 import AboutUsPage from './AboutUsPage'; // Make sure the path is correct
 import ForumPage from './ForumPage'; // Make sure the path is correct
 import HelpPage from './HelpPage'; // Make sure the path is correct
-
+import SignUpPage from './SignUpPage';
+import LoginPage from './LoginPage';
 
 // Import or define additional components for About Us, Forum, Help, Contact Us
 
@@ -13,7 +14,9 @@ const Page = {
     CHAT: "chat",
     ABOUT: "about",
     FORUM: "forum",
-    HELP: "help"
+    HELP: "help",
+    SIGNUP: "sign up",
+    LOGIN: "log in"
     // Define other pages as needed
 };
 
@@ -34,6 +37,10 @@ const App = () => {
                 return <ForumPage navigateTo={navigateTo} />;
             case Page.HELP:
                 return <HelpPage navigateTo={navigateTo} />;
+            case Page.SIGNUP:
+                return <SignUpPage navigateTo={navigateTo}/>;
+            case Page.LOGIN:
+                return <LoginPage navigateTo={navigateTo}/>;
             default:
                 return <HomePage navigateTo={navigateTo} />;
         }

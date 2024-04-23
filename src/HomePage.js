@@ -9,6 +9,8 @@ const HomePage = ({ navigateTo }) => {
                 <button onClick={() => navigateTo('about')}>About Us</button> |
                 <button onClick={() => navigateTo('forum')}>Forum</button> |
                 <button onClick={() => navigateTo('help')}>Help</button>
+                <button onClick={() => navigateTo('sign up')}>SignUp</button>
+                <button onClick={() => navigateTo('log in')}>Log in</button>
             </div>
             <h1 className="title">WELCOME TO THE</h1>
             <h2 className="h2">DEBATE CHATBOT</h2>
