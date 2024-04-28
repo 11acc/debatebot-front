@@ -37,3 +37,9 @@ const App = () => {
 };
 
 export default App;
+
+
+// navbar
+// threadpage
+// login/singup?
+// fix help

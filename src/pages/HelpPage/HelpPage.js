@@ -1,13 +1,16 @@
+
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import './HelpPage.css';
 
-const HelpPage = ({ navigateTo }) => {
+const HelpPage = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="container">
-
-            <button
-                style={{ position: 'absolute', top: '50px', right: '20px' }}
-                onClick={() => navigateTo('home')}
+            <button style={{ position: 'absolute', top: '50px', right: '20px' }}
+                    onClick={() => navigate('/')}
             >
                 Return to Home
             </button>

@@ -20,8 +20,3 @@ const ModsOnline = ({ name, title, pfp }) => {
 };
 
 export default ModsOnline;
-
-
-// navbar
-// threadpage
-// 
