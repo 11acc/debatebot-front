@@ -42,15 +42,3 @@ a {
 	text-decoration: none;
 	vertical-align: baseline;
 }
-button {
-	padding: 0;
-	font-family: inherit;
-	text-transform: none;
-	border: 0;
-	border-radius: 0;
-	background: transparent;
-	appearance: none;
-	line-height: 1;
-	cursor: crosshair;
-	outline: none;
-}
