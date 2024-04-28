@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ChatPage.css';
-import userLogo from './guy.jpg'; // Import user logo image
-import botLogo from './bot.jpg'; // Import bot logo image
+import userLogo from '../../assets/guy.jpg'; // Import user logo image
+import botLogo from '../../assets/bot.jpg'; // Import bot logo image
 
 const ChatPage = () => {
     const [messages, setMessages] = useState([]);
