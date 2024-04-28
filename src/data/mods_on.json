@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1
+        , "name": "eleva"
+        , "title": "sysadmin"
+        , "pfp": "/assets/pfps/eleva.png"
+    }
+    , {
+        "id": 2
+        , "name": "N8"
+        , "title": "where dr pepper"
+        , "pfp": "/assets/pfps/n8.png"
+    }
+]

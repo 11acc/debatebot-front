@@ -1,9 +1,9 @@
 
-/* import google IBM Plex Mono */
+/* import google Jost */
 
 :root {
     /* fonts */
-    --ibmmono: 'IBM Plex Mono';
+    --jost: 'Jost';
 
     --fs_xl: 27px;
     --fs_l: 23px;
@@ -17,28 +17,22 @@
     --fs_xxs: 12px;
     --fs_xxxs: 11px;
 
-    font-family: var(--ibmmono), monospace;
+    font-family: var(--jost), sans-serif;
     font-size: var(--fs);
     
     overflow-x: hidden;
 
     /* Colours */
     --white: #fafafa;
-    --black: #090909;
+    --black: #333;
     --grey: #d3d3d3;
     --l_grey: #edf1f5;
     --d_grey: #9299a1;
     --dd_grey: #7a858f;
     --ddd_grey: #5c728a;
+    --d4_grey: #495b6e;
 
-/* 
-        5c728a
-light #7a858f
-lighter #9299a1
-bright #edf1f5 */
-
-    --main_col: #36fda0;
-    --main_col_rgb: 54 84 74;
+    --main_cl:  #9256f3;
 
     --text_color: var(--black);
     --background_color: var(--l_grey);

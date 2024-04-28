@@ -1,0 +1,34 @@
+
+.usr {
+    display: flex;
+    padding: 10px;
+}
+
+.usr .usr_pfp {
+    width: 32px;
+    height: 32px;
+}
+.usr .usr_pfp .usr_img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.usr .usr_naming {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.usr .usr_ttl {
+    font-size: var(--fs_s);
+}
+
+.list_users>p {
+    padding: 10px;
+    font-size: var(--fs_xs);
+}
+.list {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}

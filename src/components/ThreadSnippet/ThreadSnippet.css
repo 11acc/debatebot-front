@@ -1,5 +1,6 @@
 
 .thread_snippet {
+    width: 100%;
     position: relative;
     padding: 18px;
     margin-bottom: 20px;
@@ -9,25 +10,28 @@
 .thread_snippet .ts_title {
     display: block;
     margin-bottom: 12px;
-    font-size: var(--fs_xl);
+    font-size: var(--fs_l);
 }
 .thread_snippet .ts_desc {
-    padding-right: 20px;
     margin-bottom: 18px;
-    font-size: var(--fs_m);
+    font-size: var(--fs_s);
     color: var(--d_grey);
     /* text-overflow: ellipsis; */
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .ts_footer {
     display: flex;
 }
 .ts_footer .ts_author {
-    display: inline-block;
-    padding-left: 10px;
+    color: var(--main_cl);
 }
 .ts_footer .ts_metrics {
+    display: flex;
     color: var(--d_grey);
+    gap: 0 15px;
+}
+.ts_footer .ts_metrics span {
+    display: flex;
 }

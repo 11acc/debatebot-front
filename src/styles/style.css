@@ -17,19 +17,7 @@ a {
     pointer-events: none;
 }
 
-
-/* 
-
-
-metrics/author
-img
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 3px;
-  display: inline-block;
-  height: 25px;
-  vertical-align: text-top;
-  width: 25px;
-
-*/
+.icon {
+    width: var(--fs_xs);
+    margin-right: 5px;
+}
