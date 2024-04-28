@@ -1,0 +1,60 @@
+
+/* import google IBM Plex Mono */
+
+:root {
+    /* fonts */
+    --ibmmono: 'IBM Plex Mono';
+
+    --fs_xl: 27px;
+    --fs_l: 23px;
+    --fs_m: 21px;
+    --fs_ms: 20px;
+    --fs_mss: 18px;
+    --fs_msss: 17px;
+    --fs: 16px;
+    --fs_s: 15px;
+    --fs_xs: 13.5px;
+    --fs_xxs: 12px;
+    --fs_xxxs: 11px;
+
+    font-family: var(--ibmmono), monospace;
+    font-size: var(--fs);
+    
+    overflow-x: hidden;
+
+    /* Colours */
+    --white: #fafafa;
+    --black: #090909;
+    --grey: #d3d3d3;
+    --l_grey: #edf1f5;
+    --d_grey: #9299a1;
+    --dd_grey: #7a858f;
+    --ddd_grey: #5c728a;
+
+/* 
+        5c728a
+light #7a858f
+lighter #9299a1
+bright #edf1f5 */
+
+    --main_col: #36fda0;
+    --main_col_rgb: 54 84 74;
+
+    --text_color: var(--black);
+    --background_color: var(--l_grey);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+::-moz-selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}

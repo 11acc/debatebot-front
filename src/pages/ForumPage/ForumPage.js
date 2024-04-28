@@ -1,66 +1,52 @@
-// ForumPage.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Navbar from '../../components/Navbar/Navbar';
+import ThreadSnippet from '../../components/ThreadSnippet/ThreadSnippet';
+import threadService from '../../services/thredService';
+import './ForumPage.css';
 
 const ForumPage = () => {
-    const [posts, setPosts] = useState([]);
+    const [threads, setThreads] = useState([]);
 
-    const handleAddPost = (newPost) => {
-        setPosts([...posts, newPost]);
-    };
-
-    return (
-        <div className="forum-page">
-            <h1>Forum</h1>
-            <PostForm onAddPost={handleAddPost} />
-            <hr />
-            <PostList posts={posts} />
-        </div>
-    );
-};
-
-const PostForm = ({ onAddPost }) => {
-    const [text, setText] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!text.trim()) return;
-        const newPost = { id: Date.now(), text };
-        onAddPost(newPost);
-        setText('');
-    };
+    // Simulate an async operation, even though it's just importing a local file
+    useEffect(() => {
+        const fetchThreads = async () => {
+            try {
+                const data = await Promise.resolve(threadService.fetchThreads());
+                setThreads(data);
+            } catch (error) {
+                console.error('Failed to fetch threads:', error);
+            }
+        };
+      
+        fetchThreads();
+    }, []);
+    // [] is the dependency array- it tells React to run the effect once when the component mounts and not on every update
 
     return (
-        <form onSubmit={handleSubmit}>
-      <textarea
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Write your post..."
-          rows="5"
-          cols="50"
-      ></textarea>
-            <br />
-            <button type="submit">Post</button>
-        </form>
+        <>
+            <Navbar />
+            <div className="f_content">
+                <div className="f_threads">
+                    {threads.map(thread => (
+                        <ThreadSnippet
+                            id={thread.id}
+                            title={thread.title}
+                            description={thread.description}
+                            author={thread.author}
+                            timestamp={thread.timestamp}
+                            views={thread.views}
+                            comments={thread.comments}
+                            pinned={thread.pinned}
+                            locked={thread.locked}
+                        />
+                    ))}
+                </div>
+                <div className="side_content"></div>
+            </div>
+        </>
     );
-};
 
-const PostList = ({ posts }) => {
-    return (
-        <div className="post-list">
-            {posts.map((post) => (
-                <Post key={post.id} text={post.text} />
-            ))}
-        </div>
-    );
-};
-
-const Post = ({ text }) => {
-    return (
-        <div className="post">
-            <p>{text}</p>
-        </div>
-    );
 };
 
 export default ForumPage;

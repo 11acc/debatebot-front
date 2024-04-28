@@ -2,7 +2,7 @@
     {
         "id": 1
         , "title": "Forum Guidelines"
-        , "content": "Please be reminded that this forum is a place for constructive discussion and learning. We expect all members to adhere to these guidelines and treat each other with respect."
+        , "description": "Please be reminded that this forum is a place for constructive discussion and learning. We expect all members to adhere to these guidelines and treat each other with respect."
         , "author": "N8"
         , "timestamp": "2024-04-25T09:00:00.000Z"
         , "views": 576
@@ -13,7 +13,7 @@
     , {
       "id": 2
       , "title": "The future of debate bots"
-      , "content": "As debate bots become more advanced, how do you think they will impact the learning process in debate clubs and the broader educational sector?"
+      , "description": "As debate bots become more advanced, how do you think they will impact the learning process in debate clubs and the broader educational sector?"
       , "author": "FH3785"
       , "timestamp": "2024-04-20T10:30:00.000Z"
       , "views": 120
@@ -24,7 +24,7 @@
     , {
       "id": 3
       , "title": "best strategies for christianity arguments"
-      , "content": "what are some effective strategies that you have used to structure your arguments in debates? specifically ones that are pro christianity. praise the lord!"
+      , "description": "what are some effective strategies that you have used to structure your arguments in debates? specifically ones that are pro christianity. praise the lord!"
       , "author": "StuntedPol"
       , "timestamp": "2024-04-18T15:45:00.000Z"
       , "views": 85
