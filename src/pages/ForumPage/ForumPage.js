@@ -45,25 +45,27 @@ const ForumPage = () => {
         <>
             <Navbar />
             <div className="f_content">
-                <div className="f_threads">
-                    {threads.map(thread => (
-                        <Link to={`/thread/${thread.id}`} key={thread.id}>
-                            <ThreadSnippet
-                                title={thread.title}
-                                description={thread.description}
-                                author={thread.author}
-                                timestamp={thread.timestamp}
-                                views={thread.views}
-                                comments={thread.comments}
-                                pinned={thread.pinned}
-                                locked={thread.locked}
-                            />
-                        </Link>
-                    ))}
-                </div>
-                <div className="side_content">
-                    <OBox usertype="Moderators" users={modsOn} />
-                    <OBox usertype="Users" users={usrsOn} />
+                <div className='f_wrp'>
+                    <div className="f_threads">
+                        {threads.map(thread => (
+                            <Link to={`/thread/${thread.id}`} key={thread.id}>
+                                <ThreadSnippet
+                                    title={thread.title}
+                                    description={thread.description}
+                                    author={thread.author}
+                                    timestamp={thread.timestamp}
+                                    views={thread.views}
+                                    comments={thread.comments}
+                                    pinned={thread.pinned}
+                                    locked={thread.locked}
+                                />
+                            </Link>
+                        ))}
+                    </div>
+                    <div className="side_content">
+                        <OBox usertype="Moderators" users={modsOn} />
+                        <OBox usertype="Users" users={usrsOn} />
+                    </div>
                 </div>
             </div>
         </>

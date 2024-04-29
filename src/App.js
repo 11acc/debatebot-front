@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import ForumPage from './pages/ForumPage/ForumPage';
@@ -42,4 +42,6 @@ export default App;
 // navbar
 // threadpage
 // login/singup?
-// fix help
+
+// fix help -> another person
+// diagram generation -> another person hopefully

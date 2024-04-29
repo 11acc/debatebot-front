@@ -1,7 +1,8 @@
 
 .usr {
     display: flex;
-    padding: 10px;
+    align-items: center;
+    padding: 5px 0px 10px 10px;
 }
 
 .usr .usr_pfp {
@@ -20,7 +21,9 @@
     flex-direction: column;
     padding-left: 10px;
 }
-
+.usr .usr_name {
+    color: var(--main_l_cl);
+}
 .usr .usr_ttl {
     font-size: var(--fs_s);
 }

@@ -21,6 +21,13 @@
     /* white-space: nowrap; */
 }
 
+.ts_god {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--d_grey);
+}
+
 .ts_footer {
     display: flex;
 }
