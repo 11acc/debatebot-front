@@ -1,13 +1,11 @@
+
 .container {
-  height: 95vh;
-  background-image: url('../../assets/help.png');
-  background-size: auto 80%;
-  background-repeat: no-repeat;
-  background-position: left center; /* Background image positioned to the left and centered vertically */
-  background-color: ghostwhite;
-  text-align: center;
-  padding: 20px;
-  
+    height: 95vh;
+    background-image: url('../../assets/help.png');
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: ghostwhite;
+    text-align: center;
+    padding: 25px;
 }
-
-

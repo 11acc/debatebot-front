@@ -1,0 +1,16 @@
+
+.ab_contain {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.ab_wrp {
+    width: 55%;
+    text-align: center;
+}
+.ab_title {
+    font-size: 33px;
+}
+.ab_desc {
+    font-size: var(--fs_ms);
+}

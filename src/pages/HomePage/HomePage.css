@@ -1,48 +1,21 @@
-/* HomePage.css */
+
 .homepage-container {
-    height: 95vh;
+    height: var(--hero_ht);
     background-image: url('../../assets/ie.jpeg');
     background-size: cover;
     background-position: center;
-    text-align: center;
-    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-    font-size: 3.5em;
-    margin-top: 230px;
-    margin-bottom: 18px;
-    align-content: center;
-    color: white;
-    font-family: "Andale Mono";
-}
-.h2{
-    font-size: 3.5em;
-    margin-top: 2px;
-    align-content: center;
-    color: white;
-    font-family: "Andale Mono";
+    color: var(--white);
+    font-size: 56px;
 }
 
-.start-chat-button {
-    padding: 3px 15px;
-    font-size: 1.2em;
-    cursor: pointer;
-    color: black;
-    background-color: whitesmoke;
-    font-family: "Andale Mono";
+.chatbutton {
+    margin-top: 15px;
 }
-
-.links {
-    position: fixed;
-    cursor: pointer;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1em;
-    font-family: "Andale Mono";
-}
-
-
-
-

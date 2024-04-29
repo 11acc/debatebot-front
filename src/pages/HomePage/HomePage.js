@@ -6,14 +6,18 @@ import Navbar from '../../components/Navbar/Navbar';
 
 import './HomePage.css';
 
-const HomePage = ({ navigateTo }) => {
+const HomePage = () => {
     return (
         <>
             <Navbar />
             <div className="homepage-container">
-                <h1 className="title">WELCOME TO THE</h1>
-                <h2 className="h2">DEBATE CHATBOT</h2>
-                <Link to="/chat"><button className="start-chat-button">Start ChatBot</button></Link>
+                <h1 className="title">
+                    WELCOME TO THE<br />
+                    DEBATE CHATBOT
+                </h1>
+                <Link to="/chat">
+                    <button className='chatbutton'>Start ChatBot</button>
+                </Link>
             </div>
         </>
     );

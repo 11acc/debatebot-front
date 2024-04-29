@@ -45,6 +45,9 @@
     --text_color: var(--black);
     --background_color: var(--ll_grey);
 
+    --nav_ht: 60px;
+    --hero_ht: calc(100vh - var(--nav_ht));
+
     --z-nav: 999;
 }
 

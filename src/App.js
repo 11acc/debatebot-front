@@ -39,9 +39,5 @@ const App = () => {
 export default App;
 
 
-// navbar
 // threadpage
 // login/singup?
-
-// fix help -> another person
-// diagram generation -> another person hopefully

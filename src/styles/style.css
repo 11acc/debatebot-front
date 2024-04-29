@@ -12,6 +12,11 @@ a {
     transition: .15s;
 }
 
+button {
+    font-family: var(--jost);
+    background-color: var(--dual);
+}
+
 .space {
     flex: 1;
     pointer-events: none;

@@ -10,8 +10,9 @@ const HelpPage = () => {
         <>
             <Navbar />
             <div className="container">
-                <h1 style={{marginLeft: '600px'}}>Welcome to the Help Page</h1>
-                <h2 style={{marginLeft: '600px'}}>If you have any questions or you are having trouble, please send us an email, thanks :) </h2>
+                <h2>
+                    If you have any questions or you are having trouble, please send us an email, thanks :)
+                </h2>
             </div>
         </>
     );
