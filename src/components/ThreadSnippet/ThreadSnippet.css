@@ -32,7 +32,7 @@
     display: flex;
 }
 .ts_footer .ts_author {
-    color: var(--main_cl);
+    color: var(--dual);
 }
 .ts_footer .ts_metrics {
     display: flex;

@@ -1,0 +1,56 @@
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    background: var(--main);
+    color: var(--l_grey);
+    user-select: none;
+    z-index: var(--z-nav);
+}
+.navbar .nwrap {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navlogo {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navlogo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar .navnav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.navbar .navnav .navlink {
+    padding: 18px 16px;
+    letter-spacing: .01em;
+}
+.navbar .navnav .navlink:first-child {
+    margin-left: 70px;
+}
+.navbar .navnav .navlink.signup {
+    padding: 5px 13px;
+    color: var(--ll_grey);
+    font-weight: 700;
+    background: var(--main_l);
+    border-radius: 6px;
+}
+.navbar .navnav .navlink:hover {
+    color: var(--ll_grey);
+}

@@ -25,18 +25,27 @@
     /* Colours */
     --white: #fafafa;
     --black: #333;
+    --ll_grey: #e5ebf1;
+    --l_grey: #bcbedc;
     --grey: #d3d3d3;
-    --l_grey: #edf1f5;
     --d_grey: #9299a1;
     --dd_grey: #7a858f;
     --ddd_grey: #5c728a;
     --d4_grey: #495b6e;
 
-    --main_cl:  #9256f3;
-    --main_l_cl: #d3bbfa;
+    --main_ll: #bbb9e7;
+    --main_l: #7f80af;
+    --main: #2b2d42;
+    --main_d: #20243b;
+    --main_dd: #191e34;
+
+    --dual: #7e3ade;
+    --dual_l: #a968f1;
 
     --text_color: var(--black);
-    --background_color: var(--l_grey);
+    --background_color: var(--ll_grey);
+
+    --z-nav: 999;
 }
 
 ::selection {
