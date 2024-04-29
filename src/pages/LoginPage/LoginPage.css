@@ -1,36 +1,39 @@
-/* loginpage.css */
 
-form {
+.logsing_contain {
+    width: 300px;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    margin: 25px auto 0 auto;
     border-radius: 4px;
-  }
+}
+.logsing_title {
+    padding-bottom: 10px;
+}
+.log_inpt {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
   
-  label {
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  input[type="text"], input[type="password"] {
+input[type="text"]
+, input[type="password"] {
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-  }
+    box-shadow: none;
+}
   
-  input[type="submit"] {
-    margin-top: 20px;
+.log_sub {
     padding: 10px;
+    margin-top: 10px;
+    background-color: var(--dual);
+    color: var(--white);
     border: none;
     border-radius: 4px;
-    background-color: #4CAF50;
-    color: white;
     cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
+    transition: .15s;
+}
+.log_sub:hover {
+    background-color: var(--dual_d);
+}

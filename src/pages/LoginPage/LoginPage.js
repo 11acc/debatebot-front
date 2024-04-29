@@ -1,59 +1,59 @@
 
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import Navbar from '../../components/Navbar/Navbar';
 
 import './LoginPage.css';
 
-class LoginPage extends Component {
-    constructor(props) {
-            super(props);
-            this.state = {
-            username: '',
-            password: ''
-            };
-    }
+const LoginPage = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-    handleInputChange = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    }
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        if (name === 'username') {
+            setUsername(value);
+        } else if (name === 'password') {
+            setPassword(value);
+        }
+    };
 
-    handleSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const { username, password } = this.state;
 
         const storedUsername = localStorage.getItem('username');
         const storedPassword = localStorage.getItem('password');
 
         if (username === storedUsername && password === storedPassword) {
-        console.log('Login successful');
+            console.log('Login successful');
+            alert("Login successful");
         } else {
-        console.log('Invalid username or password');
+            console.log('Invalid username or password');
+            alert("Invalid username or password");
         }
-    }
+    };
 
-    render() {
-        return (
-            <>
-                <Navbar />
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Username:
-                        <input type="text" name="username" onChange={this.handleInputChange} />
-                    </label>
-                    <br />
-                    <label>
-                        Password:
-                        <input type="password" name="password" onChange={this.handleInputChange} />
-                    </label>
-                    <br />
-                    <input type="submit" value="Submit" />
-                </form>
-            </>
-        );
-    }
-}
+    return (
+        <>
+            <Navbar />
+            <form className='logsing_contain' onSubmit={handleSubmit}>
+                <h2 className='logsing_title'>
+                    Login
+                </h2>
+                <div className='log_inpt'>
+                    Username:
+                    <div className='space'></div>
+                    <input type="text" name="username" value={username} onChange={handleInputChange} />
+                </div>
+                <div className='log_inpt'>
+                    Password:
+                    <div className='space'></div>
+                    <input type="password" name="password" value={password} onChange={handleInputChange} />
+                </div>
+                <input className='log_sub' type={"submit"} value={"Submit"} />
+            </form>
+        </>
+    );
+};
 
 export default LoginPage;

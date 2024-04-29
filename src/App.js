@@ -40,4 +40,3 @@ export default App;
 
 
 // threadpage
-// login/singup?
