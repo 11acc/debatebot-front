@@ -9,6 +9,8 @@ import Comment from '../../components/Comment/Comment';
 import threadService from '../../services/threadService';
 import commentsService from '../../services/commentsService';
 
+import './ThreadPage.css';
+
 const ThreadPage = () => {
     const { id } = useParams(); // hook to allow extraction of id from url
     const [thread, setThread] = useState([]); // state to hold thread data
@@ -36,28 +38,32 @@ const ThreadPage = () => {
     return (
         <>
             <Navbar />
-            <>
-                {thread ? (
-                    thread.map(th => (
-                        <div key={th.id}>
-                            <TopThread title={th.title} description={th.description} author={th.author} timestamp={th.timestamp} views={th.views} locked={th.locked} />
-                        </div>
-                    ))
-                ) : (
-                    <p>Loading...</p> // Display a loading message while data is being fetched
-                )}
-            </>
-            <>
-                {comment ? (
-                    comment.map(com => (
-                        <div key={com.id}>
-                            <Comment author={com.author} content={com.content} timestamp={com.timestamp} />
-                        </div>
-                    ))
-                ) : (
-                    <p>Loading...</p>
-                )}
-            </>
+            <div className='f_content thread_page'>
+                <div className='thread_wrp'>
+                    <>
+                        {thread ? (
+                            thread.map(th => (
+                                <div key={th.id}>
+                                    <TopThread title={th.title} description={th.description} author={th.author} phrase={th.phrase} timestamp={th.timestamp} views={th.views} locked={th.locked} />
+                                </div>
+                            ))
+                        ) : (
+                            <p>Loading...</p> // Display a loading message while data is being fetched
+                        )}
+                    </>
+                    <>
+                        {comment ? (
+                            comment.map(com => (
+                                <div key={com.id}>
+                                    <Comment author={com.author} content={com.content} timestamp={com.timestamp} />
+                                </div>
+                            ))
+                        ) : (
+                            <p>Loading...</p>
+                        )}
+                    </>
+                </div>
+            </div>
         </>
     );
 };
