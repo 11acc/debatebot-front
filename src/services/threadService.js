@@ -8,6 +8,13 @@ const fetchThreads = async () => {
     return Promise.resolve(threads);
 };
 
+const fetchThreadById = async (id) => {
+    // Return thread info based on id
+    const th = threads.filter((threads) => threads.id == id);
+    return Promise.resolve(th);
+}
+
 export default {
     fetchThreads
+    , fetchThreadById
 };

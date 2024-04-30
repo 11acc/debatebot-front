@@ -24,7 +24,7 @@ const App = () => {
                     <Route path="/chat" element={<ChatPage />} />
                     <Route path="/about" element={<AboutUsPage />} />
                     <Route path="/forum" element={<ForumPage />} />
-                    <Route path="/thread/:id" component={ThreadPage} />
+                    <Route path="/thread/:id" element={<ThreadPage />} />
                     <Route path="/help" element={<HelpPage />} />
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/signup" element={<SignUpPage />} />

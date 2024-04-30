@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import ThreadSnippet from '../../components/ThreadSnippet/ThreadSnippet';
 import OBox from '../../components/OBox/OBox';
 
-import threadService from '../../services/thredService';
+import threadService from '../../services/threadService';
 import modsOnService from '../../services/modsOnService';
 import usrsOnService from '../../services/usrsOnService';
 
