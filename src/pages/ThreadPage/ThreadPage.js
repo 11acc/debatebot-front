@@ -44,7 +44,7 @@ const ThreadPage = () => {
                         {thread ? (
                             thread.map(th => (
                                 <div key={th.id}>
-                                    <TopThread title={th.title} description={th.description} author={th.author} phrase={th.phrase} timestamp={th.timestamp} views={th.views} locked={th.locked} />
+                                    <TopThread title={th.title} description={th.description} author={th.author} phrase={th.phrase} pfp={th.pfp} timestamp={th.timestamp} views={th.views} locked={th.locked} />
                                 </div>
                             ))
                         ) : (
@@ -55,7 +55,7 @@ const ThreadPage = () => {
                         {comment ? (
                             comment.map(com => (
                                 <div key={com.id}>
-                                    <Comment author={com.author} content={com.content} timestamp={com.timestamp} />
+                                    <Comment author={com.author} content={com.content} pfp={com.pfp} timestamp={com.timestamp} />
                                 </div>
                             ))
                         ) : (

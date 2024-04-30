@@ -21,7 +21,7 @@
 
 .locked_thread {
     width: 100%;
-    padding: 16px 0;
+    padding-top: 16px;
 }
 .lock_wrp {
     display: flex;
@@ -30,16 +30,21 @@
     color: var(--ll_grey);
     text-align: left;
     background: var(--dd_grey);
-    border-left: 2px solid var(--main);
+    border-left: 5px solid var(--main);
     border-radius: 3px;
 }
 
 .th_content {
     display: flex;
+    margin-top: 11px;
     background-color: var(--main_ll);
-    border-top: 10px solid var(--main);
-    border-radius: 3px;
+    border: none;
 }
+.thread_ttl_space .th_content {
+    border-top: 10px solid var(--main);
+    margin-top: 20px;
+}
+
 .commenter {
     min-width: 142px;
     display: flex;
