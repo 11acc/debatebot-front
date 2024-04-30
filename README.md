@@ -1,10 +1,12 @@
 ## Debatebot Front-End
 
-![Static Badge](https://img.shields.io/badge/version-0.7-yellow)
+![Static Badge](https://img.shields.io/badge/version-1.0-green)
 
 The React frontend for the [Debatebot](https://github.com/solsylph/Debate-Chatbot) project. The frontend was separated for a complete overhaul of both the project structure and styling, as well as an easier submission to another course focused solely on React.
 
-![Gif of repo in action](../gif.gif)
+Although, the code was still developed as if data were being fetched, including service scripts referring to local json files, in order to reduce the amount of code refactoring in the case of a possible future full-stack implementation.
+
+![Gif of repo in action](./gif.gif)
 
 ### Dependencies
 [React Router DOM](https://github.com/remix-run/react-router#readme) for page linking throughout the app.
